@@ -40,7 +40,7 @@ body, html {
 }
 h1 {
     position: absolute;
-    top: 40px; right: 250px;
+    top: 5%; left: 40%;
     transform: skew(40deg);
 }
 h1 img {
@@ -139,4 +139,115 @@ h1 img {
 .sns li:hover {
     opacity: 1;
     transform: scale(1.3);
+}
+
+.txtbox {
+    position: fixed;
+    top: 200px;
+    right: 70px;
+    width: 500px;
+    height: 280px;
+}
+
+.tit {
+    font-size: 160px;
+    font-family: 'Monoton', cursive;
+    color: #b9fb05;
+    position: absolute;
+    top: 0; right: 0;
+    letter-spacing: -1px;
+}
+
+.tit em {
+    font: 50px 'Play', sans-serif;
+    /* font-size: 50px;
+    font-family: 'Play', sans-serif; */
+    color: #fff;
+}
+
+.txt {
+    position: absolute;
+    top: 200px;
+    right: 0;
+    font-size: 34px;
+    font-family: 'Play';
+    color: #bbb;
+    letter-spacing: -2px;
+}
+
+.txt strong {
+    font: 34px arial;
+    color: #b9fb05;
+    margin-left: 20px;
+}
+
+.side {
+    position: fixed;
+    top: 0;
+    right: -60%;
+    width: 800px;
+    height: 100%;
+    background: #111;
+    opacity: 0.5;
+    transform: skew(-40deg);
+    transition: all 0.5s;
+}
+
+.side .con {
+    width: 400px;
+    height: 100%;
+    position: absolute;
+    left: 135px;
+    background: #000;
+    /* 진행시간 대기시간 */
+    transition: all 0.5s 0.3s;
+}
+
+.side:hover .con {
+    left: 50px;
+}
+
+.side:hover {
+    right: -30%;
+    opacity: 0.8;
+}
+.side .con img {
+    opacity: 0.3;
+    transition: 0.5s;
+}
+
+.side .con img:hover {
+    opacity: 1;
+}
+
+.side .con > p {
+    position: absolute;
+    left: 250px;
+    transition: 0.5s;
+}
+
+.side:hover .con > p {
+    left: 50px;
+}
+
+.side .con > p:nth-child(1) {
+    bottom: 290px;
+    transition: all 0.4s;
+}
+
+.side .con > p:nth-child(2) {
+    bottom: 170px;
+    transition: all 0.8s;
+}
+
+.side .con > p:nth-child(3) {
+    bottom: 50px;
+    transition: all 1.2s;
+}
+
+.side .con > p > em {
+    font: bold normal 16px/1.7 arial;
+    color: #a0bd50;
+    display: inline-block;
+    transform: skew(40deg);
 }
